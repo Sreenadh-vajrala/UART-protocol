@@ -85,7 +85,7 @@ The design is organized into distinct Verilog modules that implement the UART pr
 
 ---
 
-## Results and Verification
+## Testing and Netlist Visualization
 
 ### Functional Testing
 
