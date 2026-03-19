@@ -146,3 +146,9 @@ After synthesis (e.g., in Intel Quartus Prime), the design hierarchy can be view
   </p>
 
 ---
+
+## Demo Video
+
+https://youtube.com/shorts/weWd1FEJScg
+
+---
