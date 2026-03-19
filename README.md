@@ -100,10 +100,10 @@ After synthesis (e.g., in Intel Quartus Prime), the design hierarchy can be view
     <img src="images/overall_schematic.jpeg" width="600"/>  
     <br><b>Figure:</b> Synthesized top-level UART design.  
   </p>
-- **Module Hierarchy:** Detailed view of the submodules:  
+- **UART Unit:**  
   <p align="center">  
     <img src="images/uart_unit.jpeg" width="600"/>  
-    <br><b>Figure:</b> UART system block diagram showing modules.  
+    <br><b>Figure:</b> UART Unit module architecture.  
   </p>
 - **Transmitter Block:**  
   <p align="center">  
