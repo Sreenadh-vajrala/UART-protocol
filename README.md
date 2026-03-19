@@ -89,18 +89,7 @@ The design is organized into distinct Verilog modules that implement the UART pr
 
 ### Functional Testing
 
-- The design is verified with a comprehensive testbench (`uart_test.v`) in ModelSim. The testbench simulates sending and receiving data through the UART by toggling `btn1`/`btn2` inputs (via debouncers) and observing the `tx`/`rx` waveforms.  
-  <p align="center">  
-    <img src="images/overall_schematic.jpeg" width="600"/>  
-    <br><b>Figure:</b> Simulated UART communication waveform (ModelSim output).  
-  </p>
-- The console transcript confirms correct operation: bytes written to the TX FIFO appear on the UART `tx` line as serial data, and similarly received bytes are stored in the RX FIFO and can be read out.  
-  <p align="center">  
-    <img src="images/uart_unit.jpeg" width="600"/>  
-    <br><b>Figure:</b> Example simulation output in ModelSim (signals and data transfer).  
-  </p>
-
----
+- Each module of the design was individually verified through simulation and step-by-step debugging to ensure functional correctness before system-level integration.
 
 ### Netlist Visualization
 
@@ -126,7 +115,26 @@ After synthesis (e.g., in Intel Quartus Prime), the design hierarchy can be view
     <img src="images/receiver_unit.jpeg" width="600"/>  
     <br><b>Figure:</b> UART Receiver module architecture.  
   </p>
-
+- **BaudRate Generator:**  
+  <p align="center">  
+    <img src="images/baud_rate_generater_unit.jpeg" width="600"/>  
+    <br><b>Figure:</b> Baud Rate Generator module architecture.  
+  </p>
+- **Debouncer Unit:**  
+  <p align="center">  
+    <img src="images/debouncer_unit.jpeg" width="600"/>  
+    <br><b>Figure:</b> Debouncer module architecture.  
+  </p>
+- **Transmitter FIFO:**  
+  <p align="center">  
+    <img src="images/transmitter_fifo.jpeg" width="600"/>  
+    <br><b>Figure:</b> Transmitter FIFO module architecture.  
+  </p>
+- **Receiver FIFO:**  
+  <p align="center">  
+    <img src="images/receiver_fifo.jpeg" width="600"/>  
+    <br><b>Figure:</b> Receiver FIFO module architecture.  
+  </p>
 ---
 
 ## References
